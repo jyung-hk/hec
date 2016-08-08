@@ -48,13 +48,13 @@ To query if the payload of a specific acknowledgment number is indexed
 
 For details, please refer to [Splunk Documentation](http://dev.splunk.com/view/event-collector/SP-CAAAE8X)
 
-Note: Event timestamp is the time when the event is submitted, not the time it is received by Indexer.
+* *Note: Event timestamp is the time when the event is submitted, not the time it is received by Indexer.*
 
 **Other supporting methods**
 ```python
   setHTTPS(Boolean: True/False)  
 ```
-* *Note: it should match the server-side setting, certification verification is disabled.* *
+* *Note: it should match the server-side setting, certification verification is disabled.*
 ```python
   setIndexer(String: indexer ip address)
 ```
@@ -66,11 +66,11 @@ Note: Event timestamp is the time when the event is submitted, not the time it i
 ```python
   setGUID(String: guid)
 ```
-* *Note: the class come with a fixed, default GUID. It's recommended to assign new GUID for a dedicated data channel* *
+* *Note: the class come with a fixed, default GUID. It's recommended to assign new GUID for a dedicated data channel*
 ```python
   setHost(String: Value of the meta field 'host')
 ```
-* *Note: default is the hostname of the socket* *
+* *Note: default is the hostname of the socket* 
 ```python
   setToken(String: Token of the HEC channel)
 ```
