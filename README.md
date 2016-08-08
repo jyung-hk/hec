@@ -6,12 +6,12 @@
 
 
 # Usage
-First step. Import the Class
+**First step**. Import the Class
 ```python
   import hec
 ```
 
-Option 1. JSON Data payload
+**Option 1**. JSON Data payload
 ```python
   hec.hecJson(String: indexer ip address,String: port,String: token)
   hec.submit(String: sourcetype,String: source,Json: event)
@@ -22,7 +22,7 @@ e.g.
   myHEC.submit("10dof","sensorData.py",eventData)
 ```
 
-Option 2. RAW Data payload
+**Option 2**. RAW Data payload
 ```python
   hec.hecRaw(String: index ip address,String: port,String: token)
   hec.submit(String: raw event)
@@ -33,7 +33,7 @@ e.g.
   myHec.submit("Raw event data example")
 ````
 
-Optional Indexer Acknowledgment: support both hecRaw and hecJson
+**Optional Indexer Acknowledgment**: support both hecRaw and hecJson
 ```python
   resp, ackId = myHEC.submit("10dof","sensorData.py",eventData)
   resp: True/False of the transfer
@@ -49,7 +49,7 @@ To query if the payload of a specific acknowledgment number is indexed
 
 Note: Event timestamp is the time when the event is submitted, not the time it is received by Indexer.
 
-Supporting methods
+**Other supporting methods**
 ```python
   setHTTPS(Boolean: True/False)  
 ```
