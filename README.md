@@ -36,9 +36,10 @@ e.g.
 **Optional Indexer Acknowledgment**: support both hecRaw and hecJson
 ```python
   resp, ackId = myHEC.submit("10dof","sensorData.py",eventData)
-  resp: True/False of the transfer
-  ackId: -1 indicates Indexer Acknowledgment is disabled on the indexer. Number > 0 is the acknowledgment number of the transfer
 ```
+- resp: True/False of the transfer
+- ackId: -1 indicates Indexer Acknowledgment is disabled on the indexer. Number > 0 is the acknowledgment number of the transfer
+
 To query if the payload of a specific acknowledgment number is indexed
 ```python
   respRack = queryAck(ackEvent)
@@ -70,7 +71,7 @@ For details, please refer to [Splunk Documentation](http://dev.splunk.com/view/e
 ```python
   setHost(String: Value of the meta field 'host')
 ```
-* *Note: default is the hostname of the socket* 
+* *Note: default is the hostname of the socket*
 ```python
   setToken(String: Token of the HEC channel)
 ```
