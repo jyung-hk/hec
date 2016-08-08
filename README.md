@@ -45,6 +45,7 @@ To query if the payload of a specific acknowledgment number is indexed
 ```
 - ackEvent: a json object containing an array of acknowledgment number
 - respRack: a json object containing the result of the acknowledgment number status
+
 For details, please refer to [Splunk Documentation](http://dev.splunk.com/view/event-collector/SP-CAAAE8X)
 
 Note: Event timestamp is the time when the event is submitted, not the time it is received by Indexer.
