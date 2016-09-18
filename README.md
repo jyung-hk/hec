@@ -42,7 +42,7 @@ e.g.
 
 To query if the payload of a specific acknowledgment number is indexed
 ```python
-  respRack = queryAck(ackEvent)
+  respRack = myHEC.queryAck(ackEvent)
 ```
 - ackEvent: a json object containing an array of acknowledgment number
 - respRack: a json object containing the result of the acknowledgment number status
